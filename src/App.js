@@ -30,10 +30,9 @@ function App() {
     try {
       setIsLoading(true);
       const response = await axios.request(options);
-      console.debug(response)
       setVideoData(response.data);
       setThumbnail(response.data.picture);
-      const [{ quality, link }] = response.data.links;
+      const { quality, link } = response.data.links.find(item => item.quality.startsWith('video'));
       setvideoQuality(quality);
       setvideoDownloadURL(link);
       setIsLoading(false);
