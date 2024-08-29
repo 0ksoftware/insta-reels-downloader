@@ -21,7 +21,7 @@ function App() {
         filename: 'download'
       },
       headers: {
-        'X-RapidAPI-Key': '824dddee65msh76dbe040b14bfe4p12ab6ajsnc6532155d4f8',
+        'X-RapidAPI-Key': '9a0a6d6b14msh25841a5aee19e6ap106c0fjsncfbd306ee2b1',
         'X-RapidAPI-Host': 'social-media-video-downloader.p.rapidapi.com'
       }
     };
